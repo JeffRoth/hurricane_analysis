@@ -76,6 +76,7 @@ def hurricane_dictionary_by_year(hurricane_dictionary):
 
 hurricanes_by_year = hurricane_dictionary_by_year(hurricane_dictionary)
 print(hurricanes_by_year)
+print("----------\n")
 
 
 # write your count affected areas function here:
@@ -92,6 +93,7 @@ def count_affected_areas(hurricane_dictionary):
 
 areas_count = count_affected_areas(hurricane_dictionary)
 print(areas_count)
+print("----------\n")
 
 
 # write your find most affected area function here:
@@ -102,6 +104,7 @@ def most_affected_area(areas_count):
     print("{} was affected the most at {} times.".format(max_key, max_value))
 
 most_affected_area = most_affected_area(areas_count)
+print("----------\n")
 
 
 # write your greatest number of deaths function here:
@@ -116,7 +119,7 @@ def most_deaths(hurricanes):
     print("{} was the hurricane with the most deaths at {}.".format(max_key, max_deaths))
 
 most_deaths(hurricane_dictionary)
-print("----------")
+print("----------\n")
 
 
 # write your catgeorize by mortality function here:
@@ -143,7 +146,7 @@ def rate_mortality(hurricanes):
     print(hurricane_mortalities)
 
 rate_mortality(hurricane_dictionary)
-
+print("----------\n")
 
 
 # write your greatest damage function here:
@@ -160,7 +163,7 @@ def greatest_damage(hurricanes):
     print("The hurricane that caused the most damage was {} and cost {} dollars.".format(max_cane, greatest_damage))
 
 greatest_damage(hurricane_dictionary)
-print("---")
+print("----------\n")
 
 
 # write your catgeorize by damage function here:

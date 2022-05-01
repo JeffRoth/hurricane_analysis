@@ -37,11 +37,9 @@ def convert_damages_to_float(damages):
 
 # convert_damages_to_float(damages)
 damages_float = convert_damages_to_float(damages)
-# print(damages_float)
 
 
-
-# write your construct hurricane dictionary function here:
+# create hurricanes dictionary
 def construct_hurricane_dictionary(names, months, years, max_sustained_winds, areas_affected, damages_float, deaths):
     """Create dictionary of hurricanes with hurricane name as the key and a dictionary of hurricane data as the value."""
     hurricane_dictionary={}
@@ -57,11 +55,10 @@ def construct_hurricane_dictionary(names, months, years, max_sustained_winds, ar
         i += 1
     return hurricane_dictionary
 
-# create hurricanes dictionary
 hurricane_dictionary = construct_hurricane_dictionary(names, months, years, max_sustained_winds, areas_affected, damages_float, deaths)
 
 
-# write your construct hurricane by year dictionary function here:
+# create new dictionary of hurricanes with year as key
 def hurricane_dictionary_by_year(hurricane_dictionary):
     """Convert dictionary with hurricane name as key to a new dictionary with hurricane year as the key and return new dictionary."""
     hurricanes_by_year = {}
@@ -79,7 +76,7 @@ print(hurricanes_by_year)
 print("----------\n")
 
 
-# write your count affected areas function here:
+# create dictionary of areas to store the number of hurricanes involved in:
 def count_affected_areas(hurricane_dictionary):
     """Count how often eash area is affected, and store in dictionary with area as key and counts how many time affected as values."""
     areas_count = dict()
@@ -96,7 +93,7 @@ print(areas_count)
 print("----------\n")
 
 
-# write your find most affected area function here:
+# find most frequently affected area and the number of hurricanes involved in
 def most_affected_area(areas_count):
     """Find the area affected by the most hurricanes and how often it was hit."""
     max_value = max(areas_count.values())
@@ -107,7 +104,7 @@ most_affected_area = most_affected_area(areas_count)
 print("----------\n")
 
 
-# write your greatest number of deaths function here:
+# find highest mortality hurricane and the number of deaths
 def most_deaths(hurricanes):
     """find the hurricane that cause the greatest number of deaths and how many deaths it caused."""
     max_deaths = 0
@@ -122,7 +119,7 @@ most_deaths(hurricane_dictionary)
 print("----------\n")
 
 
-# write your catgeorize by mortality function here:
+# catgeorize hurricanes by mortality
 def rate_mortality(hurricanes):
     """rate hurricanes on mortality scale and store results in dictionary with scale as key and list of dictionaries as values.""" 
     hurricane_mortalities=dict()
@@ -149,7 +146,7 @@ rate_mortality(hurricane_dictionary)
 print("----------\n")
 
 
-# write your greatest damage function here:
+# find hurricane with greatest damage
 def greatest_damage(hurricanes):
     """Find the hurricane that caused the greatest damage, and how costly it was."""
     greatest_damage = int(0)
@@ -166,7 +163,7 @@ greatest_damage(hurricane_dictionary)
 print("----------\n")
 
 
-# write your catgeorize by damage function here:
+# categorize hurricanes in new dictionary with damage severity as key
 def rate_by_damage(hurricanes):
     """rate hurricanes on damage scale, and store in dictionary with ratings as keys and list of dictionaries as values."""
     hurricane_damages=dict()
